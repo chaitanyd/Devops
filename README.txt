@@ -1,1 +1,25 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Browser</title>
+
+    <style>
+        p {
+            color: red;
+            font-size: 20px;
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>This is a paragraph</p>
+</body>
+
+</html>
+
 Hello, This is assignment folder and this is readme file. This file have all the information about assignments.
+
+added somme css-assignments into this branch
