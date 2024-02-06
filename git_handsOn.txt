@@ -1,0 +1,1011 @@
+ckashina@INLEN8520051008 MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+ IdeaProjects/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{ad70d812-4b38-11ee-9608-a0291940a5fc}.TM.blf
+ NTUSER.DAT{ad70d812-4b38-11ee-9608-a0291940a5fc}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{ad70d812-4b38-11ee-9608-a0291940a5fc}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+'OneDrive - Capgemini'/
+ Pictures/
+ Postman/
+'Postman Agent'/
+ PrintHood@
+ PycharmProjects/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ TerraProj/
+ Untitled.ipynb
+ Untitled1.ipynb
+ Videos/
+ get-pip.py*
+ helm-v3.10.2-windows-amd64/
+ helm-v3.10.2-windows-amd64.zip
+ kubectl.exe*
+ mintty.exe.stackdump
+ myvenv/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ proj_terraform/
+ terraform-jenkins-ec2-master/
+ terraform-jenkins-ec2-master.zip
+ test/
+ tutorial_env/
+ windows-amd64/
+
+ckashina@INLEN8520051008 MINGW64 ~
+$ cd test
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ ls
+demo.txt  hungry.py
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ touch webpage.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ ls
+demo.txt  hungry.py  webpage.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ echo ^[[200~<!DOCTYPE html>
+bash: !DOCTYPE: event not found
+<body>
+
+<h1>My First Heading</h1>
+
+<p>My first paragraph.</p>
+
+</body>
+</html>
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ echo <!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+
+<p>My first paragraph.</p>
+
+</body>
+</html>
+ webpage.html
+bash: !DOCTYPE: event not found
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: webpage.html: command not found
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ echo ^C
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ echo ^[[200~<!DOCTYPE html> webpage.html
+bash: !DOCTYPE: event not found
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ echo "<!DOCTYPE html>
+" webpage.html
+bash: !DOCTYPE: event not found
+>  webpage.html
+>
+> ^C
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ echo "<!DOCTYPE html>
+" > webpage.html
+bash: !DOCTYPE: event not found
+> ^C
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ ls
+demo.txt  hungry.py  webpage.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git add webpage.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git commit -m "created webpage"
+[master 4df3513] created webpage
+ 1 file changed, 10 insertions(+)
+ create mode 100644 webpage.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ cp webpage.html webpage2
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ ls
+demo.txt  hungry.py  webpage.html  webpage2
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git add webpage2
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git commit -m "created webpage2"
+[master 66cbd75] created webpage2
+ 1 file changed, 10 insertions(+)
+ create mode 100644 webpage2
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git log
+commit 66cbd75fa91f1c50a0bd123a2bb13d5f675167ce (HEAD -> master)
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Mon Feb 5 13:37:01 2024 +0530
+
+    created webpage2
+
+commit 4df351358098fa0581a8f00eb222ab2fb6091711
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Mon Feb 5 13:36:17 2024 +0530
+
+    created webpage
+
+commit 3a529c6b4d20be725099d1c3ff773f7790cae577
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Mon Feb 5 13:20:38 2024 +0530
+
+    create s1
+
+commit 4286ab1f8c02116662ac7b7920bd05e51bc535f8 (origin/master)
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Fri Feb 2 14:29:09 2024 +0530
+
+    first change
+
+commit 363d23f5481a18d4d10be76d8b5cb42961a532ec
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Fri Feb 2 14:24:05 2024 +0530
+
+    committed
+
+commit a5701b64dee171b90887312f30f00bfab673b285
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Fri Feb 2 14:00:45 2024 +0530
+
+    new file commited
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    .s1.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git log -all --decorate --oneline --graph
+error: switch `l' expects a numerical value
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ ^C
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git log -all --decorate --oneline --graph
+error: switch `l' expects a numerical value
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ alias graph="git log -all --decorate --oneline --graph"
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ graph
+error: switch `l' expects a numerical value
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git branch SDN
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git branch auth
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git branch
+  SDN
+  auth
+* master
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git checkout SDN
+Switched to branch 'SDN'
+D       .s1.swp
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ git branch
+* SDN
+  auth
+  master
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ git checkout auth
+Switched to branch 'auth'
+D       .s1.swp
+
+ckashina@INLEN8520051008 MINGW64 ~/test (auth)
+$ git checkout master
+Switched to branch 'master'
+D       .s1.swp
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git branch
+  SDN
+  auth
+* master
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ echo webapp1
+webapp1
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ ls
+demo.txt  hungry.py  webpage.html  webpage2
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git checkout SDN
+Switched to branch 'SDN'
+D       .s1.swp
+D       webpage2
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ ls
+demo.txt  hungry.py  webpage.html  webpage2.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ echo webapp.html
+webapp.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ ls
+demo.txt  hungry.py  webpage.html  webpage2.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ touch webapp.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ ls
+demo.txt  hungry.py  webapp.html  webpage.html  webpage2.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ ls
+demo.txt  hungry.py  webapp.html  webpage.html  webpage2.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ git add webapp.html ; git commit -m "webapp for SDN"
+[SDN a9428b0] webapp for SDN
+ 1 file changed, 14 insertions(+)
+ create mode 100644 webapp.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ git status
+On branch SDN
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    .s1.swp
+        deleted:    webpage2
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        webpage2.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ git add .
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ git status
+On branch SDN
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    .s1.swp
+        renamed:    webpage2 -> webpage2.html
+
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ git log
+commit a9428b0107d9a99b10efe478cd5db0142abf584d (HEAD -> SDN)
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Mon Feb 5 13:56:07 2024 +0530
+
+    webapp for SDN
+
+commit 66cbd75fa91f1c50a0bd123a2bb13d5f675167ce (master, auth)
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Mon Feb 5 13:37:01 2024 +0530
+
+    created webpage2
+
+commit 4df351358098fa0581a8f00eb222ab2fb6091711
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Mon Feb 5 13:36:17 2024 +0530
+
+    created webpage
+
+commit 3a529c6b4d20be725099d1c3ff773f7790cae577
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Mon Feb 5 13:20:38 2024 +0530
+
+    create s1
+
+commit 4286ab1f8c02116662ac7b7920bd05e51bc535f8 (origin/master)
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Fri Feb 2 14:29:09 2024 +0530
+
+    first change
+
+commit 363d23f5481a18d4d10be76d8b5cb42961a532ec
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Fri Feb 2 14:24:05 2024 +0530
+
+    committed
+
+commit a5701b64dee171b90887312f30f00bfab673b285
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Fri Feb 2 14:00:45 2024 +0530
+
+    new file commited
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ cat webapp.html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My Heading</h1>
+<h2>My new webapp</h2>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+
+
+
+
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ git checkout auth
+Switched to branch 'auth'
+D       .s1.swp
+D       webpage2
+A       webpage2.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (auth)
+$ ls
+demo.txt  hungry.py  webpage.html  webpage2.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (auth)
+$ touch webapp.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (auth)
+$ ls
+demo.txt  hungry.py  webapp.html  webpage.html  webpage2.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (auth)
+$ git add .
+
+ckashina@INLEN8520051008 MINGW64 ~/test (auth)
+$ git commit -m "webapp for auth"
+[auth fe9d258] webapp for auth
+ 3 files changed, 12 insertions(+), 1 deletion(-)
+ delete mode 100644 .s1.swp
+ create mode 100644 webapp.html
+ rename webpage2 => webpage2.html (74%)
+
+ckashina@INLEN8520051008 MINGW64 ~/test (auth)
+$ git status
+On branch auth
+nothing to commit, working tree clean
+
+ckashina@INLEN8520051008 MINGW64 ~/test (auth)
+$ cat webapp.html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My Heading for auth</h1>
+<h2>My new webapp for auth branch</h2>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+
+
+ckashina@INLEN8520051008 MINGW64 ~/test (auth)
+$ git status
+On branch auth
+nothing to commit, working tree clean
+
+ckashina@INLEN8520051008 MINGW64 ~/test (auth)
+$ git log
+commit fe9d258c2dbb15c81596c9e463c6dfa98fa8dc95 (HEAD -> auth)
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Mon Feb 5 14:04:08 2024 +0530
+
+    webapp for auth
+
+commit 66cbd75fa91f1c50a0bd123a2bb13d5f675167ce (master)
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Mon Feb 5 13:37:01 2024 +0530
+
+    created webpage2
+
+commit 4df351358098fa0581a8f00eb222ab2fb6091711
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Mon Feb 5 13:36:17 2024 +0530
+
+    created webpage
+
+commit 3a529c6b4d20be725099d1c3ff773f7790cae577
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Mon Feb 5 13:20:38 2024 +0530
+
+    create s1
+
+commit 4286ab1f8c02116662ac7b7920bd05e51bc535f8 (origin/master)
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Fri Feb 2 14:29:09 2024 +0530
+
+    first change
+
+commit 363d23f5481a18d4d10be76d8b5cb42961a532ec
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Fri Feb 2 14:24:05 2024 +0530
+
+    committed
+
+commit a5701b64dee171b90887312f30f00bfab673b285
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Fri Feb 2 14:00:45 2024 +0530
+
+    new file commited
+
+ckashina@INLEN8520051008 MINGW64 ~/test (auth)
+$ git checkout SDN
+Switched to branch 'SDN'
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ git log
+commit a9428b0107d9a99b10efe478cd5db0142abf584d (HEAD -> SDN)
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Mon Feb 5 13:56:07 2024 +0530
+
+    webapp for SDN
+
+commit 66cbd75fa91f1c50a0bd123a2bb13d5f675167ce (master)
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Mon Feb 5 13:37:01 2024 +0530
+
+    created webpage2
+
+commit 4df351358098fa0581a8f00eb222ab2fb6091711
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Mon Feb 5 13:36:17 2024 +0530
+
+    created webpage
+
+commit 3a529c6b4d20be725099d1c3ff773f7790cae577
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Mon Feb 5 13:20:38 2024 +0530
+
+    create s1
+
+commit 4286ab1f8c02116662ac7b7920bd05e51bc535f8 (origin/master)
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Fri Feb 2 14:29:09 2024 +0530
+
+    first change
+
+commit 363d23f5481a18d4d10be76d8b5cb42961a532ec
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Fri Feb 2 14:24:05 2024 +0530
+
+    committed
+
+commit a5701b64dee171b90887312f30f00bfab673b285
+Author: ChaitanyDevnikar <devnikarc.cd@gmail.com>
+Date:   Fri Feb 2 14:00:45 2024 +0530
+
+    new file commited
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ git log --all -decorate --oneline --graph
+error: did you mean `--decorate` (with two dashes)?
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ git log --all --decorate --oneline --graph
+* fe9d258 (auth) webapp for auth
+| * a9428b0 (HEAD -> SDN) webapp for SDN
+|/
+* 66cbd75 (master) created webpage2
+* 4df3513 created webpage
+* 3a529c6 create s1
+* 4286ab1 (origin/master) first change
+* 363d23f committed
+* a5701b6 new file commited
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ alias graph="git log --all --decorate --oneline --graph"
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ graph
+* fe9d258 (auth) webapp for auth
+| * a9428b0 (HEAD -> SDN) webapp for SDN
+|/
+* 66cbd75 (master) created webpage2
+* 4df3513 created webpage
+* 3a529c6 create s1
+* 4286ab1 (origin/master) first change
+* 363d23f committed
+* a5701b6 new file commited
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ git status
+On branch SDN
+nothing to commit, working tree clean
+
+ckashina@INLEN8520051008 MINGW64 ~/test (SDN)
+$ git checkout master
+Switched to branch 'master'
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git diff master..SDN
+diff --git a/webapp.html b/webapp.html
+new file mode 100644
+index 0000000..e5bb7d1
+--- /dev/null
++++ b/webapp.html
+@@ -0,0 +1,14 @@
++<!DOCTYPE html>
++<html>
++<body>
++
++<h1>My Heading</h1>
++<h2>My new webapp</h2>
++<p>My first paragraph.</p>
++
++</body>
++</html>
++
++
++
++
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git merge SDN
+Updating 66cbd75..a9428b0
+Fast-forward
+ webapp.html | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+ create mode 100644 webapp.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ cat webpage.html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+
+<p>My first paragraph.</p>
+
+</body>
+</html>
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ graph
+* fe9d258 (auth) webapp for auth
+| * a9428b0 (HEAD -> master, SDN) webapp for SDN
+|/
+* 66cbd75 created webpage2
+* 4df3513 created webpage
+* 3a529c6 create s1
+* 4286ab1 (origin/master) first change
+* 363d23f committed
+* a5701b6 new file commited
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git branch --merged
+  SDN
+* master
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git merge auth
+Auto-merging webapp.html
+CONFLICT (add/add): Merge conflict in webapp.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ graph]
+bash: graph]: command not found
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ graph
+* fe9d258 (auth) webapp for auth
+| * a9428b0 (HEAD -> master, SDN) webapp for SDN
+|/
+* 66cbd75 created webpage2
+* 4df3513 created webpage
+* 3a529c6 create s1
+* 4286ab1 (origin/master) first change
+* 363d23f committed
+* a5701b6 new file commited
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ git merge auth
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ ^C
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ git statu
+sgit: 'statu' is not a git command. See 'git --help'.
+
+The most similar commands are
+        status
+        stage
+        stash
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        deleted:    .s1.swp
+        renamed:    webpage2 -> webpage2.html
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both added:      webapp.html
+
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ git add .
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ git status
+On branch master
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        deleted:    .s1.swp
+        modified:   webapp.html
+        renamed:    webpage2 -> webpage2.html
+
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ git merge auth
+fatal: You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you merge.
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ git commit -m "commit"
+[master f211bc0] commit
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git merge auth
+Already up to date.
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ graph
+*   f211bc0 (HEAD -> master) commit
+|\
+| * fe9d258 (auth) webapp for auth
+* | a9428b0 (SDN) webapp for SDN
+|/
+* 66cbd75 created webpage2
+* 4df3513 created webpage
+* 3a529c6 create s1
+* 4286ab1 (origin/master) first change
+* 363d23f committed
+* a5701b6 new file commited
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git stus
+git: 'stus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git merge auth
+Already up to date.
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git branch -d SD
+error: branch 'SD' not found
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git branch -d SDN
+Deleted branch SDN (was a9428b0).
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ graph
+*   f211bc0 (HEAD -> master) commit
+|\
+| * fe9d258 (auth) webapp for auth
+* | a9428b0 webapp for SDN
+|/
+* 66cbd75 created webpage2
+* 4df3513 created webpage
+* 3a529c6 create s1
+* 4286ab1 (origin/master) first change
+* 363d23f committed
+* a5701b6 new file commited
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git branch --merged
+  auth
+* master
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git branch -d auth
+Deleted branch auth (was fe9d258).
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ graph
+*   f211bc0 (HEAD -> master) commit
+|\
+| * fe9d258 webapp for auth
+* | a9428b0 webapp for SDN
+|/
+* 66cbd75 created webpage2
+* 4df3513 created webpage
+* 3a529c6 create s1
+* 4286ab1 (origin/master) first change
+* 363d23f committed
+* a5701b6 new file commited
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+ckashina@INLEN8520051008 MINGW64 ~/test (dev)
+$ vi webpage.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (dev)
+$ git diff
+diff --git a/webpage.html b/webpage.html
+index c87692f..b1b5f16 100644
+--- a/webpage.html
++++ b/webpage.html
+@@ -3,8 +3,9 @@
+ <body>
+
+ <h1>My First Heading</h1>
+-
++<p> We have created a new branch called dev. </p>
+ <p>My first paragraph.</p>
+
+ </body>
+ </html>
++
+
+ckashina@INLEN8520051008 MINGW64 ~/test (dev)
+$ git commit -a -m "added coed to webpage.html "
+[dev 3c3d827] added coed to webpage.html
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+ckashina@INLEN8520051008 MINGW64 ~/test (dev)
+$ git checkout master
+Switched to branch 'master'
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ vi webpage.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git diff
+diff --git a/webpage.html b/webpage.html
+index c87692f..797d0ba 100644
+--- a/webpage.html
++++ b/webpage.html
+@@ -3,7 +3,7 @@
+ <body>
+
+ <h1>My First Heading</h1>
+-
++<p> This paragraph belongs to master branch. </p>
+ <p>My first paragraph.</p>
+
+ </body>
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git commit -a -m "added code to webpage.html for master"
+[master 4d01eb6] added code to webpage.html for master
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ graph
+* 4d01eb6 (HEAD -> master) added code to webpage.html for master
+| * 3c3d827 (dev) added coed to webpage.html
+|/
+*   f211bc0 commit
+|\
+| * fe9d258 webapp for auth
+* | a9428b0 webapp for SDN
+|/
+* 66cbd75 created webpage2
+* 4df3513 created webpage
+* 3a529c6 create s1
+* 4286ab1 (origin/master) first change
+* 363d23f committed
+* a5701b6 new file commited
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git merge dev
+Auto-merging webpage.html
+CONFLICT (content): Merge conflict in webpage.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   webpage.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ git merge --abort
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ graph
+* 4d01eb6 (HEAD -> master) added code to webpage.html for master
+| * 3c3d827 (dev) added coed to webpage.html
+|/
+*   f211bc0 commit
+|\
+| * fe9d258 webapp for auth
+* | a9428b0 webapp for SDN
+|/
+* 66cbd75 created webpage2
+* 4df3513 created webpage
+* 3a529c6 create s1
+* 4286ab1 (origin/master) first change
+* 363d23f committed
+* a5701b6 new file commited
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git merge dev
+Auto-merging webpage.html
+CONFLICT (content): Merge conflict in webpage.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   webpage.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ vi webpage.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ git add webpage.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ git status
+On branch master
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   webpage.html
+
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master|MERGING)
+$ git commit
+[master 04ad33d] Merge branch 'dev'
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ graph
+*   04ad33d (HEAD -> master) Merge branch 'dev'
+|\
+| * 3c3d827 (dev) added coed to webpage.html
+* | 4d01eb6 added code to webpage.html for master
+|/
+*   f211bc0 commit
+|\
+| * fe9d258 webapp for auth
+* | a9428b0 webapp for SDN
+|/
+* 66cbd75 created webpage2
+* 4df3513 created webpage
+* 3a529c6 create s1
+* 4286ab1 (origin/master) first change
+* 363d23f committed
+* a5701b6 new file commited
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ git branch -d dev
+Deleted branch dev (was 3c3d827).
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ graph
+*   04ad33d (HEAD -> master) Merge branch 'dev'
+|\
+| * 3c3d827 added coed to webpage.html
+* | 4d01eb6 added code to webpage.html for master
+|/
+*   f211bc0 commit
+|\
+| * fe9d258 webapp for auth
+* | a9428b0 webapp for SDN
+|/
+* 66cbd75 created webpage2
+* 4df3513 created webpage
+* 3a529c6 create s1
+* 4286ab1 (origin/master) first change
+* 363d23f committed
+* a5701b6 new file commited
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$
