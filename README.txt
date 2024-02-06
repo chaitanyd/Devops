@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 We have included js line of code here
+=======
+console.log('Hello World');
+>>>>>>> js-assignments
 
 <html lang="en">
 
