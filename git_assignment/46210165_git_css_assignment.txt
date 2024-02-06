@@ -1,0 +1,148 @@
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git branch css-assignments
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (css-assignments)
+$ git add style.css
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (css-assignments)
+$ git commit -m "added style.css file"
+[css-assignments b269f95] added style.css file
+ 1 file changed, 21 insertions(+)
+ create mode 100644 style.css
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (css-assignments)
+$ touch README.txt
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (css-assignments)
+$ vi README.txt
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (css-assignments)
+$ git add README.txt
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (css-assignments)
+$ git restore --README.txt
+error: unknown option `README.txt'
+usage: git restore [<options>] [--source=<branch>] <file>...
+
+    -s, --[no-]source <tree-ish>
+                          which tree-ish to checkout from
+    -S, --[no-]staged     restore the index
+    -W, --[no-]worktree   restore the working tree (default)
+    --[no-]ignore-unmerged
+                          ignore unmerged entries
+    --[no-]overlay        use overlay mode
+    -q, --[no-]quiet      suppress progress reporting
+    --[no-]recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --[no-]progress       force progress reporting
+    -m, --[no-]merge      perform a 3-way merge with the new branch
+    --[no-]conflict <style>
+                          conflict style (merge, diff3, or zdiff3)
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --[no-]patch      select hunks interactively
+    --[no-]ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (css-assignments)
+$ git restore --staged README.txt
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (css-assignments)
+$ git status
+On branch css-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        multiple-style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (css-assignments)
+$ vi README.txt
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (css-assignments)
+$ git add README.txt
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (css-assignments)
+$ git commit -m "added css line to README.txt"
+[css-assignments 3ce85a8] added css line to README.txt
+ 1 file changed, 24 insertions(+)
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git add README.txt
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git restore --staged README.txt
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ vi README.txt
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git add README.txt
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git commit -m "updated third line in README.txt"
+[master 1f65730] updated third line in README.txt
+ 1 file changed, 4 insertions(+)
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (css-assignments)
+$ ls
+README.txt  multiple-style.css  webapp.html   webpage2.html
+index.html  style.css           webpage.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (css-assignments)
+$ git status
+On branch css-assignments
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        multiple-style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (css-assignments)
+$ git add .
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (css-assignments)
+$ git commit -m "added multiple-style.css file"
+[css-assignments b3e8831] added multiple-style.css file
+ 1 file changed, 23 insertions(+)
+ create mode 100644 multiple-style.css
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git merge master css-assignments
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master|MERGING)
+$ git commit -a
+[master a162c53] Merge branch 'css-assignments'
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git merge master css-assignments
+Already up to date.

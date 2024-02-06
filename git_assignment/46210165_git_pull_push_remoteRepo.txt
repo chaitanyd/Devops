@@ -1,0 +1,39 @@
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git pull origin master
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 1.74 KiB | 35.00 KiB/s, done.
+From https://github.com/chaitanyd/Devops
+ * branch            master     -> FETCH_HEAD
+   339d37b..5d9fff6  master     -> origin/master
+Merge made by the 'ort' strategy.
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git push origin master
+Enumerating objects: 59, done.
+Counting objects: 100% (59/59), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (51/51), done.
+Writing objects: 100% (55/55), 6.16 KiB | 525.00 KiB/s, done.
+Total 55 (delta 28), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (28/28), completed with 1 local object.
+To https://github.com/chaitanyd/Devops.git
+   5d9fff6..cd45dbe  master -> master
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git branch
+  css-assignments
+  js-assignments
+* master
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$

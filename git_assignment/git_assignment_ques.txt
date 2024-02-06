@@ -1,0 +1,76 @@
+1. Create a directory ‘project_dir' & cd to 'project_dir’
+
+2. Inialize git version database
+
+3. Create a new file index.html
+
+4. Check the git status. You should find index.html as an untracked file.
+
+5. Stage the index.html file.
+
+6. Commit index.html
+
+7. Make few changes in index.html & create a new file info.txt file.
+
+8. Check git status. You should find index.html & info.txt as untracked files
+
+9. Configure GIT to ignore all txt files
+
+10. Again check the git status. You should find only index.html as an untracked files.
+
+11. State & commit index.html
+
+12. Log all your comments so far
+
+13. Make some changes in index.html
+
+14. Revert the change made in the previous step using git command
+
+15. Again change index.html
+
+16. Stage index.html
+
+17. Revert back the last stage.
+
+18. Rename 'add’ command to 'my-add’
+
+19. Using my-add command Stage index.html again & commit the changes
+
+20. Revert the last commit
+
+21. First take a backup of your assignments & projects. This is required because due to
+incorrect GIT operation. you may lose your files
+
+22. Create an empty directory 'Assignments' & cd to 'Assignments'
+
+23. Create a file README.txt inside 'Assignments' & write few lines about the contents of
+
+24. Commit README.txt file.
+
+25. Now create a new branch 'html-assignments'
+
+26. Switch to 'html-assignments' branch
+
+27. Copy all HTML assignments inside 'Assignments' folder
+
+28. Commit HTML assignments into 'html-assignments' branch
+
+29. Make minor changes into few files belonging to 'html-assignments' branch
+
+30. Commit those changed files
+
+31. Switch to master branch
+
+32. Make minor changes into README.txt file & commit those changes into master
+
+33. Again switch to 'html-assignments' branch.
+
+34. Make minor changes into a few files belonging to 'html-assignments' branch.
+
+35. Commit those changes
+
+36. Switch to master
+
+37. Merge 'html-assignments' branch into master. Confirm all html assignments are
+
+38. Finally delete the 'html-assignments' branch

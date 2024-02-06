@@ -1,0 +1,188 @@
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git branch html-assignments
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git checkout html-assignments
+Switched to branch 'html-assignments'
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+nothing to commit, working tree clean
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ cd
+
+ckashina@INLEN8520051008 MINGW64 ~
+$ cd test
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ ls
+Assignments/  git_handsOn.txt  project_dir/  webpage.html
+demo.txt      hungry.py        webapp.html   webpage2.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test (master)
+$ cd Assignments
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ ls
+README.txt
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ ls
+README.txt  index.html  webapp.html  webpage.html  webpage2.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        webapp.html
+        webpage.html
+        webpage2.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ git add .
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ git commit -m "added HTML files"
+[html-assignments 07f0557] added HTML files
+ 4 files changed, 53 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 webapp.html
+ create mode 100644 webpage.html
+ create mode 100644 webpage2.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ vi index.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ vi webapp.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   webapp.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ git add .
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   webapp.html
+
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ git commit -m "modified index.html and webapp.html file"
+[html-assignments dba6000] modified index.html and webapp.html file
+ 2 files changed, 3 insertions(+)
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+nothing to commit, working tree clean
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ ls
+README.txt
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ vi README.txt
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git add .
+warning: in the working copy of 'README.txt', LF will be replaced by CRLF the next time Git touches it
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git add .
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git commit -m "updated README.txt"
+[master 0324009] updated README.txt
+ 1 file changed, 1 insertion(+)
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git checkout html-assignments
+Switched to branch 'html-assignments'
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ vi webpage.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ vi webpage2.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ git add .
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   webpage.html
+        modified:   webpage2.html
+
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ git commit -m "updated webpage.html and webpage2.html"
+[html-assignments a450829] updated webpage.html and webpage2.html
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+nothing to commit, working tree clean
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ ls
+README.txt
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git merge master html-assignmets
+merge: html-assignmets - not something we can merge
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git merge master html-assignments
+Merge made by the 'ort' strategy.
+ index.html    | 10 ++++++++++
+ webapp.html   | 24 ++++++++++++++++++++++++
+ webpage.html  | 12 ++++++++++++
+ webpage2.html | 10 ++++++++++
+ 4 files changed, 56 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 webapp.html
+ create mode 100644 webpage.html
+ create mode 100644 webpage2.html
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$ git branch -d html-assignments
+Deleted branch html-assignments (was a450829).
+
+ckashina@INLEN8520051008 MINGW64 ~/test/Assignments (master)
+$
